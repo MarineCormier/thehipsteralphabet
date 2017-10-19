@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "brandon-grotesque";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://use.typekit.net/af/73776a/0000000000000000000132df/27/l?subset_id=2&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/73776a/0000000000000000000132df/27/d?subset_id=2&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/73776a/0000000000000000000132df/27/a?subset_id=2&fvd=n4&v=3") format("opentype"); }
+
+@font-face {
+  font-family: "brandon-grotesque-bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://use.typekit.net/af/0abd16/0000000000000000000132e3/27/l?subset_id=2&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/0abd16/0000000000000000000132e3/27/d?subset_id=2&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/0abd16/0000000000000000000132e3/27/a?subset_id=2&fvd=n7&v=3") format("opentype"); }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+nav {
+  z-index: 10;
+  position: absolute;
+  background-color: #49423a;
+  font-family: "brandon-grotesque";
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%; }
+  nav li {
+    display: inline;
+    text-align: center; }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 20px; }
+  nav a:hover {
+    color: #fbb535;
+    transition-duration: 1.5s; }
+
+.fake-nav {
+  height: 63px; }
+
+.ligne1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 530px 530px 530px 530px 530px 530px 530px; }
+  .ligne1 .bleu {
+    grid-colums: 1;
+    grid-rows: 1;
+    background: #6fcbd5; }
+  .ligne1 .jaune {
+    grid-colums: 1;
+    grid-rows: 1;
+    background: #fbb535; }
+  .ligne1 .rouge {
+    grid-colums: 1;
+    grid-rows: 1;
+    background-color: #df4b35; }
+  .ligne1 .beige {
+    grid-colums: 1;
+    grid-rows: 1;
+    background-color: #ccbeac; }
+  .ligne1 .marron {
+    grid-colums: 1;
+    grid-rows: 2;
+    background: #49423a; }
+  .ligne1 .vert {
+    grid-colums: 1;
+    grid-rows: 2;
+    background: #a1d082; }
+  .ligne1 .ligne2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 530px 530px 530px 530px 530px 530px 530px; }
+  .ligne1 .gris2 {
+    width: 200%;
+    background-color: #e5e1df; }
+  .ligne1 h1 {
+    display: inline;
+    font-size: 1.25em;
+    color: #fff;
+    font-family: "brandon-grotesque-bold";
+    letter-spacing: 0.15em;
+    text-align: left; }
+  .ligne1 h2 {
+    border-bottom: 2px solid white;
+    font-size: 1.5em;
+    letter-spacing: 0.25em;
+    color: #fff;
+    font-family: "brandon-grotesque-bold";
+    margin: 0px 20px 0 20px;
+    text-align: left; }
+  .ligne1 .img {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto; }
+  .ligne1 .title-icon {
+    display: block;
+    border-bottom: 2px solid white;
+    margin: 15px; }
+  .ligne1 img.icon {
+    border-left: 2px solid white;
+    position: relative;
+    float: right;
+    bottom: 15px;
+    padding-left: 15px; }
+  .ligne1 p {
+    letter-spacing: 0.15em;
+    height: 50px;
+    color: #fff;
+    font-size: 1em;
+    margin: 0px 20px;
+    font-family: "brandon-grotesque"; }
+  .ligne1 .logo {
+    text-align: center;
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 25%;
+    padding-bottom: 60px;
+    margin-bottom: auto; }
+
+footer {
+  height: 100px;
+  padding-top: 15px;
+  text-align: center;
+  margin: 0;
+  background-color: #49423a;
+  width: 100%; }
+  footer a.footer {
+    text-decoration: none;
+    letter-spacing: 0.30em;
+    font-size: .75em;
+    color: white;
+    font-family: "brandon-grotesque"; }

@@ -1,0 +1,196 @@
+$nav: #49423a;
+$font-bold: "brandon-grotesque-bold";
+$hover:#fbb535;
+$bleu:#6fcbd5;
+$jaune:#fbb535;
+$rouge:#df4b35;
+$beige:#ccbeac;
+$marron:#49423a;
+$vert:#a1d082;
+$gris:#e5e1df;
+
+@font-face {
+  font-family: "brandon-grotesque";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://use.typekit.net/af/73776a/0000000000000000000132df/27/l?subset_id=2&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/73776a/0000000000000000000132df/27/d?subset_id=2&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/73776a/0000000000000000000132df/27/a?subset_id=2&fvd=n4&v=3") format("opentype");
+}
+
+@font-face {
+  font-family: "brandon-grotesque-bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://use.typekit.net/af/0abd16/0000000000000000000132e3/27/l?subset_id=2&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/0abd16/0000000000000000000132e3/27/d?subset_id=2&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/0abd16/0000000000000000000132e3/27/a?subset_id=2&fvd=n7&v=3") format("opentype");
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+nav  {
+  z-index: 10;
+	position: absolute;
+	background-color:$nav;
+	font-family: "brandon-grotesque";
+	text-align: center;
+	padding: 20px 0;
+	position: fixed;
+	width: 100%;
+		li {
+
+			display: inline;
+			text-align: center;
+	}
+		a {
+			color: #fff;
+			text-decoration:none;
+			padding-right: 20px;
+		}
+		a:hover{
+			color:$hover;
+			transition-duration: 1.5s;
+		}
+}
+
+.fake-nav {
+	height: 63px;
+}
+
+.ligne1 {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+  	grid-template-rows: 530px 530px 530px 530px 530px 530px 530px;
+
+  	.bleu {
+  		grid-colums:1;
+  		grid-rows:1;
+  		background: $bleu;
+  	}
+  	.jaune {
+  		grid-colums:1;
+  		grid-rows:1;
+  		background: $jaune;
+  	}
+  	.rouge {
+  		grid-colums:1;
+  		grid-rows:1;
+  		background-color: $rouge;
+  	}
+  	.beige {
+  		grid-colums:1;
+  		grid-rows:1;
+  		background-color: $beige;
+  	}
+  	.marron {
+  		grid-colums:1;
+  		grid-rows:2;
+  		background: $marron;
+  	}
+    .vert {
+      grid-colums:1;
+      grid-rows:2;
+      background: $vert;
+    }
+    .ligne2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 530px 530px 530px 530px 530px 530px 530px;
+    }
+    .gris2 {
+      width: 200%;
+      background-color: $gris;
+    }
+
+
+    h1 {
+  display: inline;
+  font-size: 1.25em;
+  color:#fff;
+  font-family: "brandon-grotesque-bold";
+  letter-spacing: 0.15em;
+  text-align: left;
+}
+
+  h2 {
+    border-bottom: 2px solid white;
+    font-size: 1.5em;
+    letter-spacing: 0.25em;
+    color:#fff;
+    font-family: "brandon-grotesque-bold";
+    margin: 0px 20px 0 20px;
+    text-align: left;
+  }
+
+  .img {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title-icon {
+    display: block;
+    border-bottom: 2px solid white;
+    margin:15px;
+}
+      img.icon{
+        border-left:2px solid white;
+        position: relative;
+        float: right;
+        bottom: 15px;
+        padding-left: 15px;
+      }
+
+p {
+  letter-spacing: 0.15em;
+  height: 50px;
+  color: #fff;
+  font-size: 1em;
+  margin: 0px 20px;
+  font-family: "brandon-grotesque";
+}
+
+.logo {
+  text-align: center;
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 25%;
+  padding-bottom: 60px;
+  margin-bottom: auto;
+}
+}
+
+footer {
+  height: 100px;
+  padding-top: 15px;
+  text-align: center;
+  margin:0;
+  background-color: $marron;
+  width: 100%;
+    a.footer {
+      text-decoration: none;
+      letter-spacing: 0.30em;
+      font-size:.75em;
+      color: white;
+      font-family: "brandon-grotesque"
+    }
+}
+
+
+
